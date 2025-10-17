@@ -3,8 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-
-    base :"/MSD--PROJECT-",
+base: process.env.VITE_BASE_PATH || "/sample-deploy",
   
 })
 
